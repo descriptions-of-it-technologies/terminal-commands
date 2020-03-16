@@ -7,8 +7,12 @@
 ## Contents at a Glance.
 * [About.](#about)
 * [Documentation.](#documentation)
-* [Navigation Commands.](#navigation-commands)
-* [N Commands.](#n-commands)
+* [Navigation.](#navigation)
+* [File Management.](#file-management)
+* [Directory Management.](#directory-management)
+* [General.](#general)
+* [Console Editors.](#console-editors)
+* [Search.](#search)
 * [Articles.](#articles)
 * [Conferences.](#conferences)
 * [Conference Speakers.](#conference-speakers)
@@ -30,7 +34,7 @@
 
 
 
-## Navigation Commands.
+## Navigation.
 
 | Key/Command | Description |
 | ----------- | ----------- |
@@ -82,7 +86,7 @@
 
 
 
-## General Commands.
+## General.
 
 | Key/Command | Description |
 | ----------- | ----------- |
