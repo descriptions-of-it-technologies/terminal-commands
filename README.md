@@ -13,6 +13,7 @@
 * [General.](#general)
 * [Console Editors.](#console-editors)
 * [Search.](#search)
+* [Most used Alias.](#most-used-alias)
 * [Git Commands.](https://github.com/Programming-Training-And-Practice/git-main-information/blob/master/git-commands.md)
 * [Articles.](#articles)
 * [Conferences.](#conferences)
@@ -99,6 +100,8 @@
 | htop           | Displays active processes. Press q to quit.                                |
 | open [file]    | Opens a file (as if you double clicked it).                                |
 | reset          | Resets the terminal display.                                               |
+| alias          | Show all alias.                                                            |
+| history        | Show history.                                                              |
 
 
 
@@ -115,7 +118,6 @@
 
 
 
-
 ## Search.
 
 | Key/Command                       | Description                                                                                     |
@@ -125,6 +127,38 @@
 | grep -r [search_pattern] [dir]    | Recursively search in all files in specified directory for all lines that contain the pattern.  |
 | grep -v [search_pattern] [file]   | Search for all lines that do NOT contain the pattern.                                           |
 | grep -i [search_pattern] [file]   | Search for all lines that contain the case-insensitive pattern.                                 |
+
+
+
+
+
+## Most used Alias.
+
+| Alias                             | Command                                                                                               |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| GraalVM20R11                      | sdk default java 20.0.0.r11-grl                                                                       |                       
+| GraalVM20R8                       | sdk default java 20.0.0.r8-grl                                                                        |
+| JDK8                              | sdk default java 8.0.242-open                                                                         |
+| UpdateConsole                     | source /home/trl/.zshrc                                                                               |
+| aga                               | sudo apt autoclean                                                                                    |
+| agar                              | sudo apt autoremove                                                                                   |
+| agp                               | sudo apt purge                                                                                        |
+| agr                               | sudo apt remove                                                                                       |
+| agu                               | sudo apt update                                                                                       |
+| agud                              | sudo apt update && sudo apt dist-upgrade                                                              |
+| agug                              | sudo apt upgrade                                                                                      |
+| aguu                              | sudo apt update && sudo apt upgrade                                                                   |
+| h                                 | history                                                                                               |
+| history                           | omz_history                                                                                           |
+| hs                                | history | grep                                                                                        |
+| hsi                               | history | grep -i                                                                                     |
+| l                                 | ls -lah                                                                                               |
+| la                                | ls -lAh                                                                                               |
+| ll                                | ls -lh                                                                                                |
+| ls                                | ls --color=tty                                                                                        |
+| lsa                               | ls -lah                                                                                               |
+| md                                | mkdir -p                                                                                              | 
+| rd                                | rmdir                                                                                                 |
 
 
 
