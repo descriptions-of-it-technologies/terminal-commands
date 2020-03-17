@@ -104,6 +104,7 @@
 | reset          | Resets the terminal display.                                               |
 | alias          | Show all alias.                                                            |
 | history        | Show history.                                                              |
+| whoami         | Show currently user used.                                                  |
 
 
 
