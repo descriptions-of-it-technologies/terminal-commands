@@ -62,20 +62,24 @@
 
 ## Navigation.
 
-| Key/Command | Description                                      |
-| ----------- | ------------------------------------------------ |
-| cd [folder] | Change directory e.g. `cd Documents`.            |
-| cd [path]   | Change directory e.g. `cd /home/user/Documents`. |
-| cd          | Home directory.                                  |
-| cd ~        | Home directory.                                  |
-| cd /        | Root of drive.                                   |
-| cd ..       | Previous directory.                              |
-| cd ../../   | Move 2 levels up.                                |
-| ls          | Short listing.                                   |
-| ls -l       | Long listing.                                    |
-| ls -a       | Listing incl. hidden files.                      |
-| ls -lh      | Long listing with Human readable file sizes.     |
-| ls -R       | Entire content of folder recursively.            |
+| Key/Command              | Description                                      |
+| ------------------------ | ------------------------------------------------ |
+| cd [folder]              | Change directory e.g. `cd Documents`.            |
+| cd [path]                | Change directory e.g. `cd /home/user/Documents`. |
+| cd                       | Home directory.                                  |
+| cd ~                     | Home directory.                                  |
+| cd /                     | Root of drive.                                   |
+| cd ..                    | Previous directory.                              |
+| cd ../../                | Move 2 levels up.                                |
+| ls                       | Short listing.                                   |
+| ls -l                    | Long listing.                                    |
+| ls -a                    | Listing incl. hidden files.                      |
+| ls -la                   | Long listing incl. hidden files.                 |
+| ls -lh                   | Long listing with Human readable file sizes.     |
+| ls -R                    | Entire content of folder recursively.            |
+| colorls                  |                                                  |
+| colorls -a               |                                                  |
+| colorls -la              |                                                  |
 
 
 
