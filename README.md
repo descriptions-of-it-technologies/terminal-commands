@@ -12,6 +12,7 @@
 * [File Management.](#file-management)
 * [Directory Management.](#directory-management)
 * [Console Editors.](#console-editors)
+* [Permission.](#permission)
 * [Search.](#search)
 * [Most used Alias.](#most-used-alias)
 * [Git Commands.](https://github.com/Programming-Training-And-Practice/git-main-information/blob/master/git-commands.md)
@@ -54,6 +55,7 @@
 | history        | Show history.                                                              |
 | whoami         | Show currently user used.                                                  |
 
+`echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
 
 
 
@@ -116,6 +118,16 @@
 | -------------- | --------------------------------------- |
 | vim [file]     | Opens the file using the vim editor.    |
 | nano [file]    | Opens the file using the nano editor.   |
+
+
+
+
+
+## Permission.
+
+| Key/Command                       | Description                             |
+| --------------------------------- | --------------------------------------- |
+| chmod +x [file]                   | Give permission to execute the file.    |
 
 
 
