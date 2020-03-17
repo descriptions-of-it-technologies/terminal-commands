@@ -7,10 +7,10 @@
 ## Contents at a Glance.
 * [About.](#about)
 * [Documentation.](#documentation)
+* [General.](#general)
 * [Navigation.](#navigation)
 * [File Management.](#file-management)
 * [Directory Management.](#directory-management)
-* [General.](#general)
 * [Console Editors.](#console-editors)
 * [Search.](#search)
 * [Most used Alias.](#most-used-alias)
@@ -33,6 +33,26 @@
 
 
 ## Documentation.
+
+
+
+
+
+## General.
+
+| Key/Command    | Description                                                                |
+| -------------- | -------------------------------------------------------------------------- |
+| sudo [command] | Run command with the security privileges of the superuser (Super User DO). |
+| pwd            | Full path to working directory.                                            |
+| cat            | Concatenate to screen.                                                     |
+| clear          | Clears the screen.                                                         |
+| top            | Displays active processes. Press q to quit.                                |
+| htop           | Displays active processes. Press q to quit.                                |
+| open [file]    | Opens a file (as if you double clicked it).                                |
+| reset          | Resets the terminal display.                                               |
+| alias          | Show all alias.                                                            |
+| history        | Show history.                                                              |
+| whoami         | Show currently user used.                                                  |
 
 
 
@@ -85,26 +105,6 @@
 | rmdir [dir]          | Remove directory (only operates on empty directories).  |
 | rm -R [dir]          | Remove directory and contents.                          |
 | rm -r [dir]          | Remove a directory and contents.                        |
-
-
-
-
-
-## General.
-
-| Key/Command    | Description                                                                |
-| -------------- | -------------------------------------------------------------------------- |
-| sudo [command] | Run command with the security privileges of the superuser (Super User DO). |
-| pwd            | Full path to working directory.                                            |
-| cat            | Concatenate to screen.                                                     |
-| clear          | Clears the screen.                                                         |
-| top            | Displays active processes. Press q to quit.                                |
-| htop           | Displays active processes. Press q to quit.                                |
-| open [file]    | Opens a file (as if you double clicked it).                                |
-| reset          | Resets the terminal display.                                               |
-| alias          | Show all alias.                                                            |
-| history        | Show history.                                                              |
-| whoami         | Show currently user used.                                                  |
 
 
 
