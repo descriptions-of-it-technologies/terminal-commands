@@ -14,6 +14,7 @@
 * [Console Editors.](#console-editors)
 * [Permission.](#permission)
 * [Search.](#search)
+* [System and Service Manager.](#system-and-service-manager)
 * [Most used Alias.](#most-used-alias)
 * [Git Commands.](https://github.com/Programming-Training-And-Practice/git-main-information/blob/master/git-commands.md)
 * [Maven Commands.](https://github.com/Programming-Training-And-Practice/maven-main-information/blob/master/maven-commands.md)
@@ -146,6 +147,17 @@
 | grep -r [search_pattern] [dir]    | Recursively search in all files in specified directory for all lines that contain the pattern.  |
 | grep -v [search_pattern] [file]   | Search for all lines that do NOT contain the pattern.                                           |
 | grep -i [search_pattern] [file]   | Search for all lines that contain the case-insensitive pattern.                                 |
+
+
+
+
+
+## System and Service Manager.
+
+| Alias                                               | Command                                                                                               |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| systemctl list-units                                |                                                                                                       |
+| `systemctl list-units | grep .service`              |                                                                                                       |
 
 
 
