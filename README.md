@@ -57,8 +57,8 @@
 | history                                 | Show history.                                                              |
 | whoami                                  | Show currently user used.                                                  |
 | which [nameApp]                         | Linux which command is used to identify the location of a given executable |
-                                          | that is executed when you type the executable name (command) in the        |
-                                          | terminal prompt.                                                           |
+|                                          | that is executed when you type the executable name (command) in the        |
+|                                          | terminal prompt.                                                           |
 | someCommand                             |  SomeDescription                                                           |
 `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
 
