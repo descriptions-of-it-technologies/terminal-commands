@@ -35,27 +35,30 @@
 
 
 ## Documentation.
-
+* [Ubuntu Manual.](http://manpages.ubuntu.com/)
+* [systemctl](http://manpages.ubuntu.com/manpages/bionic/en/man1/systemctl.1.html)
 
 
 
 
 ## General.
 
-| Key/Command    | Description                                                                |
-| -------------- | -------------------------------------------------------------------------- |
-| sudo [command] | Run command with the security privileges of the superuser (Super User DO). |
-| pwd            | Full path to working directory.                                            |
-| cat            | Concatenate to screen.                                                     |
-| clear          | Clears the screen.                                                         |
-| top            | Displays active processes. Press q to quit.                                |
-| htop           | Displays active processes. Press q to quit.                                |
-| open [file]    | Opens a file (as if you double clicked it).                                |
-| reset          | Resets the terminal display.                                               |
-| alias          | Show all alias.                                                            |
-| history        | Show history.                                                              |
-| whoami         | Show currently user used.                                                  |
-
+| Key/Command                             | Description                                                                |
+| --------------------------------------- | -------------------------------------------------------------------------- |
+| sudo [command]                          | Run command with the security privileges of the superuser (Super User DO). |
+| pwd                                     | Full path to working directory.                                            |
+| cat                                     | Concatenate to screen.                                                     |
+| clear                                   | Clears the screen.                                                         |
+| top                                     | Displays active processes. Press q to quit.                                |
+| htop                                    | Displays active processes. Press q to quit.                                |
+| open [file]                             | Opens a file (as if you double clicked it).                                |
+| reset                                   | Resets the terminal display.                                               |
+| alias                                   | Show all alias.                                                            |
+| history                                 | Show history.                                                              |
+| whoami                                  | Show currently user used.                                                  |
+| which [nameApp]                         | Linux which command is used to identify the location of a given executable 
+                                            that is executed when you type the executable name (command) in the terminal prompt.                                                  |
+| someCommand                             |  SomeDescription                                                           |
 `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
 
 
@@ -156,8 +159,21 @@
 
 | Alias                                               | Command                                                                                               |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| systemctl list-unit-files                           |                                                                                                       |
 | systemctl list-units                                |                                                                                                       |
-| ~~systemctl list-units | grep .service~~             |                                                                                                       |
+| systemctl --all                                     |                                                                                                       |
+| systemctl --failed                                  |                                                                                                       |
+| systemctl status [nameService]                      | Show status of service.                                                                               |
+| systemctl status [nameService.service]              | Show status of service.                                                                               |
+| systemctl start [nameService.service]               | Start the service.                                                                                    |
+| systemctl stop [nameService.service]                | Stops the service.                                                                                    |
+| systemctl restart [nameService.service]             | Restart the service.                                                                                  |
+| systemctl enable [nameService.service]              | Enable to starts on boot.                                                                             |
+| systemctl disable [nameService.service]             | Disable to start on boot.                                                                             |
+| systemctl is-enabled [nameService]                  | Check status of service enabled or disabled.                                                          |
+
+`systemctl list-units | grep .service`
+`systemctl list-unit-files | grep .service`
 
 
 
