@@ -14,7 +14,8 @@
 * [Console Editors.](#console-editors)
 * [Permission.](#permission)
 * [Search.](#search)
-* [System and Service Manager.](#system-and-service-manager)
+* [System and Service Managements.](#system-and-service-managements)
+* [Log Managements.](#log-managements)
 * [Most used Alias.](#most-used-alias)
 * [Git Commands.](https://github.com/Programming-Training-And-Practice/git-main-information/blob/master/git-commands.md)
 * [Maven Commands.](https://github.com/Programming-Training-And-Practice/maven-main-information/blob/master/maven-commands.md)
@@ -154,7 +155,7 @@
 
 
 
-## System and Service Manager.
+## System and Service Managements.
 
 | Alias                                               | Command                                                                                               |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -173,6 +174,24 @@
 
 `systemctl list-units | grep .service`
 `systemctl list-unit-files | grep .service`
+
+
+
+
+
+## Log Managements.
+
+| Key/Command                                              | Description                                                                                     |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| journalctl                                               | Show every journal entry that is in the system will be displayed within a page.                 |
+| journalctl -b                                            | Displaying logs from the current Boot.                                                          |
+| journalctl --list-boots                                  | To see the boots that journald knows about.                                                     |
+| journalctl -u [name]                                     | To see all of the logs from an unit name our system.                                            |
+| journalctl -p [priorityLevel]                            | To see all of the logs at a priority level on you system.                                       |
+| journalctl -p err                                        |                                                                                                 |
+| journalctl -p crit                                       |                                                                                                 |
+| journalctl -n                                            | To display a set amount of records.                                                             |                                                                                                |
+| journalctl -f                                            | To actively follow the logs as they are being writen.                                           |
 
 
 
