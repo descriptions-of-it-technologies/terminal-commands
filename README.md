@@ -157,7 +157,7 @@
 | Alias                                               | Command                                                                                               |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | systemctl list-units                                |                                                                                                       |
-| "systemctl list-units | grep .service"              |                                                                                                       |
+| ~~systemctl list-units | grep .service~~             |                                                                                                       |
 
 
 
