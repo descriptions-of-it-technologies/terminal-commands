@@ -80,7 +80,10 @@
 | ls -a                    | Listing incl. hidden files.                      |
 | ls -la                   | Long listing incl. hidden files.                 |
 | ls -lh                   | Long listing with Human readable file sizes.     |
+| ls -lah                  |                                                  |
 | ls -R                    | Entire content of folder recursively.            |
+| ll                       |                                                  |
+| la                       |                                                  |
 | colorls                  |                                                  |
 | colorls -a               |                                                  |
 | colorls -la              |                                                  |
@@ -101,7 +104,7 @@
 | cp [file] [dir]          | Copy file to directory.                              | 
 | mv [file] [newFileName]  | Move/Rename, e.g. `mv file1.ad /tmp`.                |
 | less [file]              | Output file content delivered in screensize chunks.  |
-
+| find . -name <filename>  | Finding Nested Files.                                |
 
 
 
@@ -115,8 +118,9 @@
 | rmdir [dir]          | Remove directory (only operates on empty directories).  |
 | rm -R [dir]          | Remove directory and contents.                          |
 | rm -r [dir]          | Remove a directory and contents.                        |
-
-
+| du -sch ./*          | Current Directory Size                                  |
+| du -ah -d 1          |                                                         |
+| du -h -d 1          |                                                         |
 
 
 
