@@ -13,6 +13,8 @@
 * [Directory Management.](#directory-management)
 * [Console Editors.](#console-editors)
 * [Permission.](#permission)
+* [Iptables Management.](#iptables-management)
+* [Ip6tables Management.](#ip6tables-management)
 * [Search.](#search)
 * [System and Service Managements.](#system-and-service-managements)
 * [Log Managements.](#log-managements)
@@ -140,6 +142,34 @@
 | Key/Command                       | Description                             |
 | --------------------------------- | --------------------------------------- |
 | chmod +x [file]                   | Give permission to execute the file.    |
+
+
+
+
+
+## Iptables Management.
+
+| Key/Command                                                   | Description                                                                                     |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| sudo iptables-save                                            | View the current configuration for IPv4.                                                        |
+| sudo vim /etc/network/if-up.d/iptables-rules                  | Create a script with a dump of iptables rules.                                                  |
+| sudo chmod +x /etc/network/if-up.d/iptables-rules             | We make the iptables script executable.                                                         |
+| sudo /etc/network/if-up.d/iptables-rules                      | Load the iptables rules.                                                                        |
+| sudo iptables -L                                              | Show list of rules.                                                                             |
+|                                                               |                                                                                                 |
+
+
+
+
+## Ip6tables Management.
+
+| Key/Command                                                   | Description                                                                                     |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| sudo ip6tables-save                                           | View the current configuration for IPv6.                                                        |
+| sudo vim /etc/network/if-up.d/ip6tables-rules                 | Create a script with a dump of ip6tables rules.                                                 |
+| sudo chmod +x /etc/network/if-up.d/ip6tables-rules            | We make the ip6tables script executable.                                                        |
+| sudo /etc/network/if-up.d/ip6tables-rules                     | Load the ip6tables rules.                                                                       |
+|                                                               |                                                                                                 |
 
 
 
