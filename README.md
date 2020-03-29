@@ -66,6 +66,19 @@
 
 
 
+
+## Ports.
+| Key/Command                             | Description                                                                |
+| --------------------------------------- | -------------------------------------------------------------------------- |
+| sudo lsof -i -P -n | grep LISTEN        |                                                                            |
+| sudo lsof -i -P -n                      |                                                                            |
+| sudo lsof -i:[numberPort]               |                                                                            |
+|                                         |                                                                            |
+
+
+
+
+
 ## Navigation.
 
 | Key/Command              | Description                                      |
