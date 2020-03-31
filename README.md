@@ -8,6 +8,8 @@
 * [About.](#about)
 * [Documentation.](#documentation)
 * [General.](#general)
+* [Ports.](#ports)
+* [Process Management.](#process-management)
 * [Navigation.](#navigation)
 * [File Management.](#file-management)
 * [Directory Management.](#directory-management)
@@ -68,12 +70,31 @@
 
 
 ## Ports.
+
 | Key/Command                             | Description                                                                |
 | --------------------------------------- | -------------------------------------------------------------------------- |
 | sudo lsof -i -P -n | grep LISTEN        |                                                                            |
 | sudo lsof -i -P -n                      |                                                                            |
 | sudo lsof -i:[numberPort]               |                                                                            |
 |                                         |                                                                            |
+
+
+
+
+
+## Process Management.
+
+| Key/Command                             | Description                                                                |
+| --------------------------------------- | -------------------------------------------------------------------------- |
+| ps -a                                   | Show list of processes.                                                    |
+| killall [nameProcess]                   | Kill process by name.                                                      |
+| pkill -f 'java -jar'                    |                                                                            |
+| jps                                     | Java Virtual Machine Process Status Tool.                                  |
+| jps -l                                  |                                                                            |
+| jps -v                                  |                                                                            |
+|                                         |                                                                            |
+
+`ps -a | grep [nameProcess]` Show process by name.
 
 
 
