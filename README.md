@@ -196,10 +196,11 @@
 | -w, --write-out <format>                | Make curl display information on stdout after a completed transfer. See man page for more details on available variables. Convenient way to force curl to append a newline to output: -w "\n" (can add to ~/.curlrc).|
 | -X, --request                           | The request method to use.                                                                                             |
 
-`curl -H "Content-Type: application/json" -X GET http://localhost:8080`
-`curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST http://localhost:8080`
-`curl -H "Content-Type: application/json" -X PATCH http://localhost:8080`
-`curl -H "Content-Type: application/json" -X DELETE http://localhost:8080`
+* `curl -H "Content-Type: application/json" -X GET http://localhost:8080`
+* `curl -H "Content-Type: application/json" -X POST http://localhost:8080`
+* `curl -H "Content-Type: application/json" -X PATCH http://localhost:8080`
+* `curl -H "Content-Type: application/json" -X DELETE http://localhost:8080`
+* `curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST http://localhost:8080`
 
 
 
