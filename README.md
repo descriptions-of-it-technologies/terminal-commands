@@ -14,6 +14,7 @@
 * [File Management.](#file-management)
 * [Directory Management.](#directory-management)
 * [Console Editors.](#console-editors)
+* [curl](#curl)
 * [Permission.](#permission)
 * [Iptables Management.](#iptables-management)
 * [Ip6tables Management.](#ip6tables-management)
