@@ -63,6 +63,8 @@
 | history                                 | Show history.                                                              |
 | whoami                                  | Show currently user used.                                                  |
 | which [nameApp]                         | Linux which command is used to identify the location of a given executable that is executed when you type the executable name (command) in the terminal prompt. |                                                          |
+| lsblk                                   |                                                                            |
+|                                         |                                                                            |
 
 `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
 
@@ -124,7 +126,7 @@
 | colorls                  |                                                  |
 | colorls -a               |                                                  |
 | colorls -la              |                                                  |
-
+|                          |                                                  |
 
 
 
@@ -142,7 +144,7 @@
 | mv [file] [newFileName]  | Move/Rename, e.g. `mv file1.ad /tmp`.                |
 | less [file]              | Output file content delivered in screensize chunks.  |
 | find . -name <filename>  | Finding Nested Files.                                |
-
+|                          |                                                      |
 
 
 
@@ -158,7 +160,7 @@
 | du -sch ./*          | Current Directory Size                                  |
 | du -ah -d 1          |                                                         |
 | du -h -d 1           |                                                         |
-
+|                      |                                                         |
 
 
 
@@ -169,7 +171,7 @@
 | -------------- | --------------------------------------- |
 | vim [file]     | Opens the file using the vim editor.    |
 | nano [file]    | Opens the file using the nano editor.   |
-
+|                |                                         |
 
 
 
@@ -195,6 +197,7 @@
 | -v, --verbose                           | Provide more information (useful for debugging).                                                                       |
 | -w, --write-out <format>                | Make curl display information on stdout after a completed transfer. See man page for more details on available variables. Convenient way to force curl to append a newline to output: -w "\n" (can add to ~/.curlrc).|
 | -X, --request                           | The request method to use.                                                                                             |
+|                                         |                                                                                                                        |
 
 * `curl -H "Content-Type: application/json" -X GET http://localhost:8080`
 * `curl -H "Content-Type: application/json" -X POST http://localhost:8080`
@@ -210,7 +213,7 @@
 | Key/Command                       | Description                             |
 | --------------------------------- | --------------------------------------- |
 | chmod +x [file]                   | Give permission to execute the file.    |
-
+|                                   |                                         |
 
 
 
@@ -252,7 +255,7 @@
 | grep -r [search_pattern] [dir]    | Recursively search in all files in specified directory for all lines that contain the pattern.  |
 | grep -v [search_pattern] [file]   | Search for all lines that do NOT contain the pattern.                                           |
 | grep -i [search_pattern] [file]   | Search for all lines that contain the case-insensitive pattern.                                 |
-
+|                                   |                                                                                                 |
 
 
 
@@ -273,6 +276,7 @@
 | systemctl enable [nameService.service]              | Enable to starts on boot.                                                                             |
 | systemctl disable [nameService.service]             | Disable to start on boot.                                                                             |
 | systemctl is-enabled [nameService]                  | Check status of service enabled or disabled.                                                          |
+|                                                     |                                                                                                       |
 
 `systemctl list-units | grep .service`
 `systemctl list-unit-files | grep .service`
@@ -294,7 +298,7 @@
 | journalctl -p crit                                       |                                                                                                 |
 | journalctl -n                                            | To display a set amount of records.                                                             |                                                                                                |
 | journalctl -f                                            | To actively follow the logs as they are being writen.                                           |
-
+|                                                          |                                                                                                 |
 
 
 
@@ -326,7 +330,7 @@
 | lsa                               | ls -lah                                                                                               |
 | md                                | mkdir -p                                                                                              | 
 | rd                                | rmdir                                                                                                 |
-
+|                                   |                                                                                                       |
 
 
 
