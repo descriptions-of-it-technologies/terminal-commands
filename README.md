@@ -47,6 +47,22 @@
 
 
 
+
+## Sort this commands.
+
+| Key/Command                             | Description                                                                |
+| --------------------------------------- | -------------------------------------------------------------------------- |
+| sed -i '/swap/d' /etc/fstab             |                                                                            |
+| swapoff -a                              |                                                                            |
+| sysctl --system                         |                                                                            |
+| gpasswd -a [userName] [groupName]       | Add user to the group.                                                     |
+| scp                                     |                                                                            |
+|                                         |                                                                            |
+
+
+
+
+
 ## General.
 
 | Key/Command                             | Description                                                                |
@@ -65,9 +81,11 @@
 | which [nameApp]                         | Linux which command is used to identify the location of a given executable that is executed when you type the executable name (command) in the terminal prompt. |                                                          |
 | lsblk                                   |                                                                            |
 | df -h                                   |                                                                            |
-| free -h                                 |                                                                            |
+| free -h                                 | Show RAM memory. Human-readable.                                           |
+| free -m                                 | Show RAM memory.                                                           |
+| nproc                                   | Number of CPU.                                                             |
+| uptime                                  | Show time of operating system.                                             |
 |                                         |                                                                            |
-
 
 `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
 
@@ -160,6 +178,7 @@
 | rmdir [dir]          | Remove directory (only operates on empty directories).  |
 | rm -R [dir]          | Remove directory and contents.                          |
 | rm -r [dir]          | Remove a directory and contents.                        |
+| rm -rf [dir]         | Force removal a directory and contents.                 |
 | du -sch ./*          | Current Directory Size                                  |
 | du -ah -d 1          |                                                         |
 | du -h -d 1           |                                                         |
@@ -277,6 +296,7 @@
 | systemctl stop [nameService.service]                | Stops the service.                                                                                    |
 | systemctl restart [nameService.service]             | Restart the service.                                                                                  |
 | systemctl enable [nameService.service]              | Enable to starts on boot.                                                                             |
+| systemctl enable --now [nameService.service]        |                                                                                                       |
 | systemctl disable [nameService.service]             | Disable to start on boot.                                                                             |
 | systemctl is-enabled [nameService]                  | Check status of service enabled or disabled.                                                          |
 |                                                     |                                                                                                       |
