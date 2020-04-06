@@ -100,6 +100,9 @@
 | sudo lsof -i -P -n | grep LISTEN        |                                                                            |
 | sudo lsof -i -P -n                      |                                                                            |
 | sudo lsof -i:[numberPort]               |                                                                            |
+| sudo fuser -k [portNumber]/tcp          |                                                                            |
+| sudo fuser [portNumber]/tcp             |                                                                            |
+| netstat -tulpn | grep LISTEN            |                                                                            |
 |                                         |                                                                            |
 
 
