@@ -85,6 +85,8 @@
 | free -m                                 | Show RAM memory.                                                           |
 | nproc                                   | Number of CPU.                                                             |
 | uptime                                  | Show time of operating system.                                             |
+| getent passwd ubuntu                    |                                                                            |
+| dpkg -L [namePackage]                   | Shows you what files the package installed.                                |
 |                                         |                                                                            |
 
 `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
@@ -248,6 +250,7 @@
 | Key/Command                                                   | Description                                                                                     |
 | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | sudo iptables-save                                            | View the current configuration for IPv4.                                                        |
+| sudo ip6tables-save                                           | View the current configuration for IPv6.                                                        |
 | sudo vim /etc/network/if-up.d/iptables-rules                  | Create a script with a dump of iptables rules.                                                  |
 | sudo chmod +x /etc/network/if-up.d/iptables-rules             | We make the iptables script executable.                                                         |
 | sudo /etc/network/if-up.d/iptables-rules                      | Load the iptables rules.                                                                        |
