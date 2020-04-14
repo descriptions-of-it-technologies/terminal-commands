@@ -57,6 +57,7 @@
 | sysctl --system                         |                                                                            |
 | gpasswd -a [userName] [groupName]       | Add user to the group.                                                     |
 | scp                                     |                                                                            |
+| watch [Command]                         |                                                                            |
 |                                         |                                                                            |
 
 
@@ -116,11 +117,13 @@
 | Key/Command                             | Description                                                                |
 | --------------------------------------- | -------------------------------------------------------------------------- |
 | ps -a                                   | Show list of processes.                                                    |
+| ps -ef                                  | Show list of processes.                                                    |
 | killall [nameProcess]                   | Kill process by name.                                                      |
 | pkill -f 'java -jar'                    |                                                                            |
 | jps                                     | Java Virtual Machine Process Status Tool.                                  |
 | jps -l                                  |                                                                            |
 | jps -v                                  |                                                                            |
+| ps -ef | grep [nameProcess]             |                                                                            |
 |                                         |                                                                            |
 
 `ps -a | grep [nameProcess]` Show process by name.
