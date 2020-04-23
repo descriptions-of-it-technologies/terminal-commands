@@ -58,6 +58,7 @@
 | gpasswd -a [userName] [groupName]       | Add user to the group.                                                     |
 | scp                                     |                                                                            |
 | watch [Command]                         |                                                                            |
+| uname -r                                |                                                                            |
 |                                         |                                                                            |
 
 
