@@ -59,6 +59,7 @@
 | scp                                     |                                                                            |
 | watch [Command]                         |                                                                            |
 | uname -r                                |                                                                            |
+| ip a s                                  |                                                                            |
 |                                         |                                                                            |
 
 
