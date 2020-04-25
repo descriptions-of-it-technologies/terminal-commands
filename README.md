@@ -60,6 +60,7 @@
 | watch [Command]                         |                                                                            |
 | uname -r                                |                                                                            |
 | ip a s                                  |                                                                            |
+| echo -n 'somevalue' | base64            |                                                                            |
 |                                         |                                                                            |
 
 
