@@ -13,7 +13,6 @@
 * [Navigation.](#navigation)
 * [File Management.](#file-management)
 * [Directory Management.](#directory-management)
-* [Console Editors.](#console-editors)
 * [curl](#curl)
 * [Permission.](#permission)
 * [Iptables Management.](#iptables-management)
@@ -21,6 +20,7 @@
 * [Search.](#search)
 * [System and Service Managements.](#system-and-service-managements)
 * [Log Managements.](#log-managements)
+* [Group Managements.](#groups-managements)
 * [Most used Alias.](#most-used-alias)
 * [Git Commands.](https://github.com/Programming-Training-And-Practice/git-main-information/blob/master/git-commands.md)
 * [Maven Commands.](https://github.com/Programming-Training-And-Practice/maven-main-information/blob/master/maven-commands.md)
@@ -55,12 +55,12 @@
 | sed -i '/swap/d' /etc/fstab             |                                                                            |
 | swapoff -a                              |                                                                            |
 | sysctl --system                         |                                                                            |
-| gpasswd -a [userName] [groupName]       | Add user to the group.                                                     |
 | scp                                     |                                                                            |
 | watch [Command]                         |                                                                            |
 | uname -r                                |                                                                            |
-| ip a s                                  |                                                                            |
+| ip a s | less                           |                                                                            |
 | echo -n 'somevalue' | base64            |                                                                            |
+| lsb_release -dirc                       |                                                                            |
 |                                         |                                                                            |
 
 
@@ -89,7 +89,6 @@
 | free -m                                 | Show RAM memory.                                                           |
 | nproc                                   | Number of CPU.                                                             |
 | uptime                                  | Show time of operating system.                                             |
-| getent passwd ubuntu                    |                                                                            |
 | dpkg -L [namePackage]                   | Shows you what files the package installed.                                |
 |                                         |                                                                            |
 
@@ -109,6 +108,7 @@
 | sudo fuser -k [portNumber]/tcp          |                                                                            |
 | sudo fuser [portNumber]/tcp             |                                                                            |
 | netstat -tulpn | grep LISTEN            |                                                                            |
+| netstat -nltp | grep [nameApp]          |                                                                            |
 |                                         |                                                                            |
 
 
@@ -195,16 +195,6 @@
 | du -h -d 1           |                                                         |
 |                      |                                                         |
 
-
-
-
-## Console Editors.
-
-| Key/Command    | Description                             |
-| -------------- | --------------------------------------- |
-| vim [file]     | Opens the file using the vim editor.    |
-| nano [file]    | Opens the file using the nano editor.   |
-|                |                                         |
 
 
 
@@ -308,9 +298,10 @@
 | systemctl stop [nameService.service]                | Stops the service.                                                                                    |
 | systemctl restart [nameService.service]             | Restart the service.                                                                                  |
 | systemctl enable [nameService.service]              | Enable to starts on boot.                                                                             |
-| systemctl enable --now [nameService.service]        |                                                                                                       |
 | systemctl disable [nameService.service]             | Disable to start on boot.                                                                             |
 | systemctl is-enabled [nameService]                  | Check status of service enabled or disabled.                                                          |
+| service --status-all                                |                                                                                                       |
+| systemctl daemon-reload                             |                                                                                                       |
 |                                                     |                                                                                                       |
 
 `systemctl list-units | grep .service`
@@ -334,6 +325,18 @@
 | journalctl -n                                            | To display a set amount of records.                                                             |                                                                                                |
 | journalctl -f                                            | To actively follow the logs as they are being writen.                                           |
 |                                                          |                                                                                                 |
+
+
+
+
+
+## Groups Managements.
+
+| Key/Command                                               | Description                                                                |
+| --------------------------------------------------------- | -------------------------------------------------------------------------- |
+| gpasswd -a [userName] [groupName]                         | Add user to the group.                                                     |
+| getent group [groupName]                                  |                                                                            |
+|                                                           |                                                                            |
 
 
 
