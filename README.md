@@ -21,7 +21,23 @@
 * [System and Service Managements.](#system-and-service-managements)
 * [Log Managements.](#log-managements)
 * [Group Managements.](#groups-managements)
-* [Most used Alias.](#most-used-alias)
+* [Alias.](#alias)
+* [Alias for Kubernetes.](#alias-for-kubernetes)
+* [Alias for Kubernetes Node.](#alias-for-kubernetes-node)
+* [Alias for Kubernetes Deployment.](#alias-for-kubernetes-deployment)
+* [Alias for Kubernetes ReplicaSet.](#alias-for-kubernetes-replicaset)
+* [Alias for Kubernetes Pod.](#alias-for-kubernetes-pod)
+* [Alias for Kubernetes Namespace.](#alias-for-kubernetes-namespace)
+* [Alias for Kubernetes Service.](#alias-for-kubernetes-service)
+* [Alias for Kubernetes Configmap.](#alias-for-kubernetes-configmap)
+* [Alias for Kubernetes Logs.](#alias-for-kubernetes-logs)
+* [Alias for Kubernetes Secret.](#alias-for-kubernetes-secret)
+* [Alias for Kubernetes PersistentVolumeClaim.](#alias-for-kubernetes-persistentvolumeclaim)
+* [Alias for Kubernetes Ingress.](#alias-for-kubernetes-ingress)
+* [Alias for Kubernetes Statefulset.](#alias-for-kubernetes-statefulset)
+* [Alias for Kubernetes Config.](#alias-for-kubernetes-config)
+* [Alias for Kubernetes Port Forwarding.](#alias-for-kubernetes-port-forwarding)
+* [Alias for Kubernetes Rollout.](#alias-for-kubernetes-rollout)
 * [Git Commands.](https://github.com/Programming-Training-And-Practice/git-main-information/blob/master/git-commands.md)
 * [Maven Commands.](https://github.com/Programming-Training-And-Practice/maven-main-information/blob/master/maven-commands.md)
 * [Kubernetes Commands.](https://github.com/Programming-Training-And-Practice/kubernetes-main-information/blob/master/kubernetes-commands.md)
@@ -61,6 +77,7 @@
 | ip a s | less                           |                                                                            |
 | echo -n 'somevalue' | base64            |                                                                            |
 | lsb_release -dirc                       |                                                                            |
+| alias [nameAlias]="commandAlisa"        |                                                                            |
 |                                         |                                                                            |
 
 
@@ -341,34 +358,266 @@
 
 
 
-## Most used Alias.
+
+## Alias.
 
 | Alias                             | Command                                                                                               |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| GraalVM20R11                      | sdk default java 20.0.0.r11-grl                                                                       |                       
-| GraalVM20R8                       | sdk default java 20.0.0.r8-grl                                                                        |
-| JDK8                              | sdk default java 8.0.242-open                                                                         |
-| UpdateConsole                     | source /home/trl/.zshrc                                                                               |
-| aga                               | sudo apt autoclean                                                                                    |
-| agar                              | sudo apt autoremove                                                                                   |
-| agp                               | sudo apt purge                                                                                        |
-| agr                               | sudo apt remove                                                                                       |
-| agu                               | sudo apt update                                                                                       |
-| agud                              | sudo apt update && sudo apt dist-upgrade                                                              |
-| agug                              | sudo apt upgrade                                                                                      |
-| aguu                              | sudo apt update && sudo apt upgrade                                                                   |
 | h                                 | history                                                                                               |
 | history                           | omz_history                                                                                           |
-| hs                                | history | grep                                                                                        |
-| hsi                               | history | grep -i                                                                                     |
-| l                                 | ls -lah                                                                                               |
-| la                                | ls -lAh                                                                                               |
-| ll                                | ls -lh                                                                                                |
-| ls                                | ls --color=tty                                                                                        |
-| lsa                               | ls -lah                                                                                               |
-| md                                | mkdir -p                                                                                              | 
-| rd                                | rmdir                                                                                                 |
 |                                   |                                                                                                       |
+| l                                 | ls -CF                                                                                                |
+| lS                                | ls -1FSsh                                                                                             |
+| la                                | ls -A                                                                                                 |
+| lart                              | ls -1Fcart                                                                                            |
+| ldot                              | ls -ld .*                                                                                             |
+| ll                                | ls -alF                                                                                               |
+| lr                                | ls -tRFh                                                                                              |
+| lrt                               | ls -1Fcrt                                                                                             |
+| ls                                | ls --color=auto                                                                                       |
+| lsa                               | ls -lah                                                                                               |
+| lt                                | ls -ltFh                                                                                              |
+| mv                                | mv -i                                                                                                 |
+
+* hsi `history | grep -i`
+* hs `history | grep`
+
+
+
+
+## Alias for Kubernetes.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kaf                                                                               | kubectl apply -f                                                                                      |
+| kdel                                                                              | kubectl delete                                                                                        |
+| kdelf                                                                             | kubectl delete -f                                                                                     |
+| keti                                                                              | kubectl exec -ti                                                                                      |
+| kga                                                                               | kubectl get all                                                                                       |
+| k                                                                                 | kubectl                                                                                               |
+| kca                                                                               | _kca(){ kubectl "$@" --all-namespaces;  unset -f _kca; }; _kca                                        |
+| kclean                                                                            | sudo aptitude remove -P ?and(~i~nlinux-(ima|hea) ?not(~n`uname -r`))                                  |
+
+| kcp                                                                               | kubectl cp                                                                                            |
+
+
+
+
+## Alias for Kubernetes Node.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kdelno                                                                            | kubectl delete node                                                                                   |
+| keno                                                                              | kubectl edit node                                                                                     |
+| kgno                                                                              | kubectl get nodes                                                                                     |
+| kdno                                                                              | kubectl describe node                                                                                 |
+
+
+
+
+
+## Alias for Kubernetes Deployment.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kdd                                                                               | kubectl describe deployment                                                                           |
+| kdeld                                                                             | kubectl delete deployment                                                                             |
+| ked                                                                               | kubectl edit deployment                                                                               |
+| kgd                                                                               | kubectl get deployment                                                                                |
+| kgda                                                                              | kubectl get deployment --all-namespaces                                                               |
+| ksd                                                                               | kubectl scale deployment                                                                              |
+| krsd                                                                              | kubectl rollout status deployment                                                                     |
+| kgdwide                                                                           | kgd -o wide                                                                                           |
+| kgdw                                                                              | kgd --watch                                                                                           |
+|                                                                                   |                                                                                                       |
+
+
+
+
+## Alias for Kubernetes ReplicaSet.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kgrs                                                                              | kubectl get rs                                                                                        |
+
+
+
+
+
+## Alias for Kubernetes Pod.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kdelp                                                                             | kubectl delete pods                                                                                   |
+| kep                                                                               | kubectl edit pods                                                                                     |
+| kdp                                                                               | kubectl describe pods                                                                                 |
+| kgp                                                                               | kubectl get pods                                                                                      |
+| kgpa                                                                              | kubectl get pods --all-namespaces                                                                     |
+| kgpl                                                                              | kgp -l                                                                                                |
+| kgpwide                                                                           | kgp -o wide                                                                                           |
+| kgpw                                                                              | kgp --watch                                                                                           |
+|                                                                                   |                                                                                                       |
+
+
+
+
+
+## Alias for Kubernetes Namespace.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kdelns                                                                            | kubectl delete namespace                                                                              | 
+| kdns                                                                              | kubectl describe namespace                                                                            |
+| kens                                                                              | kubectl edit namespace                                                                                |
+| kgaa                                                                              | kubectl get all --all-namespaces                                                                      |
+| kgns                                                                              | kubectl get namespaces                                                                                |
+|                                                                                   |                                                                                                       |
+
+
+
+
+
+## Alias for Kubernetes Service.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kgsa                                                                              | kubectl get svc --all-namespaces                                                                      |
+| kds                                                                               | kubectl describe svc'                                                                                 |
+| kgs                                                                               | kubectl get svc                                                                                       |
+| kdels                                                                             | kubectl delete svc                                                                                    |
+| kes                                                                               | kubectl edit svc                                                                                      |
+| kgswide                                                                           | kgs -o wide                                                                                           |
+| kgsw                                                                              | kgs --watch                                                                                           |
+| kgsswide                                                                          | kgss -o wide                                                                                          |
+| kgssw                                                                             | kgss --watch                                                                                          |
+|                                                                                   |                                                                                                       |
+
+
+
+
+
+## Alias for Kubernetes Configmap.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kdcm                                                                              | kubectl describe configmap                                                                            | 
+| kdelcm                                                                            | kubectl delete configmap                                                                              | 
+| kecm                                                                              | kubectl edit configmap                                                                                | 
+| kgcm                                                                              | kubectl get configmaps                                                                                | 
+| kgcma                                                                             | kubectl get configmaps --all-namespaces                                                               | 
+|                                                                                   |                                                                                                       |
+
+
+
+
+
+## Alias for Kubernetes Logs.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kl                                                                                | kubectl logs                                                                                          | 
+| kl1h                                                                              | kubectl logs --since 1h                                                                               |
+| kl1m                                                                              | kubectl logs --since 1m                                                                               |
+| kl1s                                                                              | kubectl logs --since 1s                                                                               |
+| klf                                                                               | kubectl logs -f                                                                                       |
+| klf1h                                                                             | kubectl logs --since 1h -f                                                                            |
+| klf1m                                                                             | kubectl logs --since 1m -f                                                                            |
+| klf1s                                                                             | kubectl logs --since 1s -f                                                                            |
+
+
+
+
+
+## Alias for Kubernetes Secret.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kdelsec                                                                           | kubectl delete secret                                                                                 |
+| kgseca                                                                            | kubectl get secret --all-namespaces                                                                   |
+| kgsec                                                                             | kubectl get secret                                                                                    |
+| kdsec                                                                             | kubectl describe secret                                                                               |
+
+
+
+
+
+## Alias for Kubernetes PersistentVolumeClaim.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kgpvca                                                                            | kubectl get pvc --all-namespaces                                                                      |
+| kgpvc                                                                             | kubectl get pvc                                                                                       |
+| kdpvc                                                                             | kubectl describe pvc                                                                                  |
+| kepvc                                                                             | kubectl edit pvc                                                                                      |
+| kdelpvc                                                                           | kubectl delete pvc                                                                                    |
+| kgpvcw                                                                            | kgpvc --watch                                                                                         |
+|                                                                                   |                                                                                                       |
+
+
+
+
+## Alias for Kubernetes Ingress.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kgia                                                                              | kubectl get ingress --all-namespaces                                                                  |
+| kdeli                                                                             | kubectl delete ingress                                                                                |
+| kdi                                                                               | kubectl describe ingress                                                                              |
+| kgi                                                                               | kubectl get ingress                                                                                   |
+| kei                                                                               | kubectl edit ingress                                                                                  |
+
+
+
+
+
+## Alias for Kubernetes Statefulset.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kgssa                                                                             | kubectl get statefulset --all-namespaces                                                              |
+| kdss                                                                              | kubectl describe statefulset                                                                          |
+| kdelss                                                                            | kubectl delete statefulset                                                                            |
+| kess                                                                              | kubectl edit statefulset                                                                              |
+| ksss                                                                              | kubectl scale statefulset                                                                             |
+| krsss                                                                             | kubectl rollout status statefulset                                                                    |
+| kgss                                                                              | kubectl get statefulset                                                                               |
+
+
+
+
+
+## Alias for Kubernetes Config.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kccc                                                                              | kubectl config current-context                                                                        |
+| kcdc                                                                              | kubectl config delete-context                                                                         |
+| kcgc                                                                              | kubectl config get-contexts                                                                           |
+| kcn                                                                               | kubectl config set-context $(kubectl config current-context) --namespace                              |
+| kcsc                                                                              | kubectl config set-context                                                                            |
+| kcuc                                                                              | kubectl config use-context                                                                            |
+
+
+
+
+
+## Alias for Kubernetes Port Forwarding.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kpf                                                                               | kubectl port-forward                                                                                  |
+
+
+
+
+
+## Alias for Kubernetes Rollout.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| krh                                                                               | kubectl rollout history                                                                               |
+| kru                                                                               | kubectl rollout undo                                                                                  |
+
 
 
 
