@@ -110,7 +110,8 @@
 |                                         |                                                                            |
 
 `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
-
+`echo -n 'someValue' | base64`
+`echo -n 'encodedValue' | base64 --decode`
 
 
 
@@ -138,6 +139,7 @@
 | --------------------------------------- | -------------------------------------------------------------------------- |
 | ps -a                                   | Show list of processes.                                                    |
 | ps -ef                                  | Show list of processes.                                                    |
+| ps aux                                  | Show list of processes.                                                    |
 | killall [nameProcess]                   | Kill process by name.                                                      |
 | pkill -f 'java -jar'                    |                                                                            |
 | jps                                     | Java Virtual Machine Process Status Tool.                                  |
@@ -416,34 +418,6 @@
 
 
 
-## Alias for Kubernetes Deployment.
-
-| Alias                                                                             | Command                                                                                               |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| kdd                                                                               | kubectl describe deployment                                                                           |
-| kdeld                                                                             | kubectl delete deployment                                                                             |
-| ked                                                                               | kubectl edit deployment                                                                               |
-| kgd                                                                               | kubectl get deployment                                                                                |
-| kgda                                                                              | kubectl get deployment --all-namespaces                                                               |
-| ksd                                                                               | kubectl scale deployment                                                                              |
-| krsd                                                                              | kubectl rollout status deployment                                                                     |
-| kgdwide                                                                           | kgd -o wide                                                                                           |
-| kgdw                                                                              | kgd --watch                                                                                           |
-|                                                                                   |                                                                                                       |
-
-
-
-
-## Alias for Kubernetes ReplicaSet.
-
-| Alias                                                                             | Command                                                                                               |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| kgrs                                                                              | kubectl get rs                                                                                        |
-
-
-
-
-
 ## Alias for Kubernetes Pod.
 
 | Alias                                                                             | Command                                                                                               |
@@ -462,7 +436,36 @@
 
 
 
-## Alias for Kubernetes Namespace.
+## Alias for Kubernetes ReplicaSet.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kgrs                                                                              | kubectl get rs                                                                                        |
+
+
+
+
+
+## Alias for Kubernetes Deployment.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kdd                                                                               | kubectl describe deployment                                                                           |
+| kdeld                                                                             | kubectl delete deployment                                                                             |
+| ked                                                                               | kubectl edit deployment                                                                               |
+| kgd                                                                               | kubectl get deployment                                                                                |
+| kgda                                                                              | kubectl get deployment --all-namespaces                                                               |
+| ksd                                                                               | kubectl scale deployment                                                                              |
+| krsd                                                                              | kubectl rollout status deployment                                                                     |
+| kgdwide                                                                           | kgd -o wide                                                                                           |
+| kgdw                                                                              | kgd --watch                                                                                           |
+|                                                                                   |                                                                                                       |
+
+
+
+
+
+## Alias for Kubernetes Namespace. ns
 
 | Alias                                                                             | Command                                                                                               |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -477,7 +480,22 @@
 
 
 
-## Alias for Kubernetes Service.
+## Alias for Kubernetes Config.
+
+| Alias                                                                             | Command                                                                                               |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| kccc                                                                              | kubectl config current-context                                                                        |
+| kcdc                                                                              | kubectl config delete-context                                                                         |
+| kcgc                                                                              | kubectl config get-contexts                                                                           |
+| kcn                                                                               | kubectl config set-context $(kubectl config current-context) --namespace                              |
+| kcsc                                                                              | kubectl config set-context                                                                            |
+| kcuc                                                                              | kubectl config use-context                                                                            |
+
+
+
+
+
+## Alias for Kubernetes Service. svc
 
 | Alias                                                                             | Command                                                                                               |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -496,7 +514,7 @@
 
 
 
-## Alias for Kubernetes Configmap.
+## Alias for Kubernetes Configmap. cm
 
 | Alias                                                                             | Command                                                                                               |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -581,21 +599,6 @@
 | ksss                                                                              | kubectl scale statefulset                                                                             |
 | krsss                                                                             | kubectl rollout status statefulset                                                                    |
 | kgss                                                                              | kubectl get statefulset                                                                               |
-
-
-
-
-
-## Alias for Kubernetes Config.
-
-| Alias                                                                             | Command                                                                                               |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| kccc                                                                              | kubectl config current-context                                                                        |
-| kcdc                                                                              | kubectl config delete-context                                                                         |
-| kcgc                                                                              | kubectl config get-contexts                                                                           |
-| kcn                                                                               | kubectl config set-context $(kubectl config current-context) --namespace                              |
-| kcsc                                                                              | kubectl config set-context                                                                            |
-| kcuc                                                                              | kubectl config use-context                                                                            |
 
 
 
