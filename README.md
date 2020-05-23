@@ -78,6 +78,7 @@
 | echo -n 'somevalue' | base64            |                                                                            |
 | lsb_release -dirc                       |                                                                            |
 | alias [nameAlias]="commandAlisa"        |                                                                            |
+| pulseaudio -k                           |                                                                            |
 |                                         |                                                                            |
 
 
