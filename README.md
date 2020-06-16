@@ -63,6 +63,7 @@
 | lsb_release -dirc                       |                                                                            |
 | alias [nameAlias]="commandAlisa"        |                                                                            |
 | pulseaudio -k                           |                                                                            |
+| id                                      |                                                                            |
 |                                         |                                                                            |
 
 
@@ -79,6 +80,7 @@
 | clear                                   | Clears the screen.                                                         |
 | top                                     | Displays active processes. Press q to quit.                                |
 | htop                                    | Displays active processes. Press q to quit.                                |
+| tree                                    |                                                                            |
 | open [file]                             | Opens a file (as if you double clicked it).                                |
 | reset                                   | Resets the terminal display.                                               |
 | alias                                   | Show all alias.                                                            |
@@ -122,6 +124,7 @@
 
 | Key/Command                             | Description                                                                |
 | --------------------------------------- | -------------------------------------------------------------------------- |
+| ps                                      |                                                                            |
 | ps -a                                   | Show list of processes.                                                    |
 | ps -ef                                  | Show list of processes.                                                    |
 | ps aux                                  | Show list of processes.                                                    |
