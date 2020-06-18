@@ -64,6 +64,7 @@
 | alias [nameAlias]="commandAlisa"        |                                                                            |
 | pulseaudio -k                           |                                                                            |
 | id                                      |                                                                            |
+| dive                                    |                                                                            |
 |                                         |                                                                            |
 
 
