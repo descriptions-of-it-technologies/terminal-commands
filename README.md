@@ -50,22 +50,23 @@
 
 ## Sort this commands.
 
-| Key/Command                             | Description                                                                |
-| --------------------------------------- | -------------------------------------------------------------------------- |
-| sed -i '/swap/d' /etc/fstab             |                                                                            |
-| swapoff -a                              |                                                                            |
-| sysctl --system                         |                                                                            |
-| scp                                     |                                                                            |
-| watch [Command]                         |                                                                            |
-| uname -r                                |                                                                            |
-| ip a s | less                           |                                                                            |
-| echo -n 'somevalue' | base64            |                                                                            |
-| lsb_release -dirc                       |                                                                            |
-| alias [nameAlias]="commandAlisa"        |                                                                            |
-| pulseaudio -k                           |                                                                            |
-| id                                      |                                                                            |
-| dive                                    |                                                                            |
-|                                         |                                                                            |
+| Key/Command                                              | Description                                                                |
+| -------------------------------------------------------- | -------------------------------------------------------------------------- |
+| sed -i '/swap/d' /etc/fstab                              |                                                                            |
+| swapoff -a                                               |                                                                            |
+| sysctl --system                                          |                                                                            |
+| scp                                                      |                                                                            |
+| watch [Command]                                          |                                                                            |
+| uname -r                                                 |                                                                            |
+| ip a s | less                                            |                                                                            |
+| echo -n 'somevalue' | base64                             |                                                                            |
+| lsb_release -dirc                                        |                                                                            |
+| alias [nameAlias]="commandAlisa"                         |                                                                            |
+| pulseaudio -k                                            |                                                                            |
+| id                                                       |                                                                            |
+| dive                                                     |                                                                            |
+| nc -z -v -w 1 [nameService] [portNumber]                 |                                                                            |
+|                                                          |                                                                            |
 
 
 
