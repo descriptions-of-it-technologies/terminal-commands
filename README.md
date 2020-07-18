@@ -66,6 +66,7 @@
 | id                                                       |                                                                            |
 | dive                                                     |                                                                            |
 | nc -z -v -w 1 [nameService] [portNumber]                 |                                                                            |
+| hostname [hostname]                                      | Change hostname.                                                           |
 |                                                          |                                                                            |
 
 
@@ -101,6 +102,32 @@
 `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
 `echo -n 'someValue' | base64`
 `echo -n 'encodedValue' | base64 --decode`
+
+
+
+
+
+## SSH.
+
+| Key/Command                             | Description                                                                |
+| --------------------------------------- | -------------------------------------------------------------------------- |
+| ssh-keygen                              |                                                                            |
+| ssh-copy-id [nameUser]@[ipAddress]      | Copy ssh keys to dedicated server.                                         |
+|                                         |                                                                            |
+
+
+
+
+
+## Users.
+
+| Key/Command                             | Description                                                                |
+| --------------------------------------- | -------------------------------------------------------------------------- |
+| useradd [nameUser]                      | Add new user.                                                              |
+| passwd [nameUser]                       | Change password of user.                                                   |
+| usermod -aG [nameGroup] [nameUser]      | Add user to the group.                                                     |
+|                                         |                                                                            |
+
 
 
 
@@ -242,10 +269,11 @@
 
 ## Permission.
 
-| Key/Command                       | Description                             |
-| --------------------------------- | --------------------------------------- |
-| chmod +x [file]                   | Give permission to execute the file.    |
-|                                   |                                         |
+| Key/Command                                                                  | Description                                                        |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| chmod +x [file]                                                              | Give permission to execute the file.                               |
+| chown -R [userName]:[groupName] [path]                                       | Add permissions to folder or file.                                 |
+|                                                                              |                                                                    |
 
 
 
@@ -309,6 +337,10 @@
 | systemctl enable [nameService.service]              | Enable to starts on boot.                                                                             |
 | systemctl disable [nameService.service]             | Disable to start on boot.                                                                             |
 | systemctl is-enabled [nameService]                  | Check status of service enabled or disabled.                                                          |
+| service [nameService] start                         |                                                                                                       |
+| service [nameService] status                        |                                                                                                       |
+| service [nameService] reload                        |                                                                                                       |
+| service [nameService] stop                          |                                                                                                       |
 | service --status-all                                |                                                                                                       |
 | systemctl daemon-reload                             |                                                                                                       |
 |                                                     |                                                                                                       |
