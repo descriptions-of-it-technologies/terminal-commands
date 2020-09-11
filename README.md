@@ -58,6 +58,7 @@
 | scp                                                      |                                                                            |
 | watch [Command]                                          |                                                                            |
 | uname -r                                                 |                                                                            |
+| ip a                                                     |                                                                            |
 | ip a s | less                                            |                                                                            |
 | echo -n 'somevalue' | base64                             |                                                                            |
 | lsb_release -dirc                                        |                                                                            |
@@ -67,6 +68,9 @@
 | dive                                                     |                                                                            |
 | nc -z -v -w 1 [nameService] [portNumber]                 |                                                                            |
 | hostname [hostname]                                      | Change hostname.                                                           |
+| hostname -I                                              |                                                                            |
+| ip a                                                     |                                                                            |
+| man [someCommand]                                        | Show manual of command.                                                    |
 |                                                          |                                                                            |
 
 
@@ -162,9 +166,11 @@
 | jps                                     | Java Virtual Machine Process Status Tool.                                  |
 | jps -l                                  |                                                                            |
 | jps -v                                  |                                                                            |
-| ps -ef | grep [nameProcess]             |                                                                            |
+| lsof -i :8080                           |                                                                            |
+| kill $(lsof -t -i :8080)                |                                                                            |
 |                                         |                                                                            |
 
+`ps -ef | grep [nameProcess]`
 `ps -a | grep [nameProcess]` Show process by name.
 
 
@@ -273,6 +279,7 @@
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | chmod +x [file]                                                              | Give permission to execute the file.                               |
 | chown -R [userName]:[groupName] [path]                                       | Add permissions to folder or file.                                 |
+| chown -R [userName]:[groupName] [path] -R                                    | Add permissions recursively to folder or file.                     |
 |                                                                              |                                                                    |
 
 
