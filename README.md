@@ -73,6 +73,8 @@
 | man [someCommand]                                        | Show manual of command.                                                    |
 |                                                          |                                                                            |
 
+`>` - Write to the file
+`>>` - Append to the file
 
 
 
