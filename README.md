@@ -64,7 +64,7 @@
 | echo -n 'somevalue' | base64                             |                                                                            |
 | lsb_release -dirc                                        |                                                                            |
 | alias [nameAlias]="commandAlisa"                         |                                                                            |
-| pulseaudio -k                                            |                                                                            |
+| pulseaudio -k                                            | “Dummy Output” No sound in Ubuntu                                          |
 | id                                                       |                                                                            |
 | dive                                                     |                                                                            |
 | nc -z -v -w 1 [nameService] [portNumber]                 |                                                                            |
@@ -72,6 +72,7 @@
 | hostname -I                                              |                                                                            |
 | ip a                                                     |                                                                            |
 | man [someCommand]                                        | Show manual of command.                                                    |
+| sudo apt-cache show [nameApp]                            |                                                                            |
 |                                                          |                                                                            |
 
 `>` - Write to the file
