@@ -318,6 +318,27 @@
 
 
 
+## Python.
+| Key/Command                                                                          | Description                                                                                     |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| python --version                                                                     |                                                                                                 |
+| python2 --version                                                                    |                                                                                                 |
+| python3 --version                                                                    |                                                                                                 |
+| python -V                                                                            |                                                                                                 |
+| python2 -V                                                                           |                                                                                                 |
+| python3 -V                                                                           |                                                                                                 |
+| pip3 --version                                                                       |                                                                                                 |
+| ls /usr/bin/python*                                                                  | Check what python versions are available on your Ubuntu system.                                 |
+| sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1         | Set Python alternatives.                                                                        |
+| sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2         | Set Python alternatives.                                                                        |
+| sudo update-alternatives --list python                                               | Check if you already have some python alternatives configured.                                  |
+| sudo update-alternatives --config python                                             | Change to alternative python version.                                                           |
+|                                                                                      |                                                                                                 |
+
+
+
+
+
 ## Search.
 
 | Key/Command                       | Description                                                                                     |
