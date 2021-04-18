@@ -172,6 +172,8 @@
 | jps -v                                  |                                                                            |
 | lsof -i :8080                           |                                                                            |
 | kill $(lsof -t -i :8080)                |                                                                            |
+| pkill -f 'bazel'                        |                                                                            |
+| ps -ef | grep -iwc bazel                |                                                                            |
 |                                         |                                                                            |
 
 `ps -ef | grep [nameProcess]`
@@ -348,8 +350,17 @@
 | grep -r [search_pattern] [dir]    | Recursively search in all files in specified directory for all lines that contain the pattern.  |
 | grep -v [search_pattern] [file]   | Search for all lines that do NOT contain the pattern.                                           |
 | grep -i [search_pattern] [file]   | Search for all lines that contain the case-insensitive pattern.                                 |
+| -i                            	| Ignore case distinctions on Linux and Unix                                                      |
+| -w                            	| Force PATTERN to match only whole words                                                         |
+| -v	                            | Select non-matching lines                                                                       |
+| -n                            	| Print line number with output lines                                                             |
+| -h                            	| Suppress the Unix file name prefix on output                                                    |
+| -r	                            | Search directories recursivly on Linux                                                          |
+| -R	                            | Just like -r but follow all symlinks                                                            |
+| -l                              	| Print only names of FILEs with selected lines                                                   |
+| -c                                | Print only a count of selected lines per FILE                                                   |
+| --color                       	| Display matched pattern in colors                                                               |
 |                                   |                                                                                                 |
-
 
 
 
