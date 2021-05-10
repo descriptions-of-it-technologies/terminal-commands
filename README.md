@@ -105,11 +105,19 @@
 | nproc                                   | Number of CPU.                                                             |
 | uptime                                  | Show time of operating system.                                             |
 | dpkg -L [namePackage]                   | Shows you what files the package installed.                                |
+| sudo apt-get update                     |                                                                            |
+| sudo apt-get upgrade                    |                                                                            |
+| sudo apt-get dist-upgrade               |                                                                            |
+| sudo apt-get autoremove                 |                                                                            |
+| sudo apt update                         |                                                                            |
+| sudo apt upgrade                        |                                                                            |
+| sudo apt dist-upgrade                   |                                                                            |
+| sudo apt autoremove                     |                                                                            |
 |                                         |                                                                            |
 
-`echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
-`echo -n 'someValue' | base64`
-`echo -n 'encodedValue' | base64 --decode`
+* `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
+* `echo -n 'someValue' | base64`
+* `echo -n 'encodedValue' | base64 --decode`
 
 
 
