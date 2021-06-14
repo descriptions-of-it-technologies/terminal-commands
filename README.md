@@ -112,7 +112,9 @@
 | sudo apt update                         |                                                                            |
 | sudo apt upgrade                        |                                                                            |
 | sudo apt dist-upgrade                   |                                                                            |
+| sudo apt-get full-upgrade               |                                                                            |
 | sudo apt autoremove                     |                                                                            |
+| sudo apt-get autoclean                  |                                                                            |
 |                                         |                                                                            |
 
 * `echo "export PATH=$PATH:/pathToExecutableFile" >> /etc/bash.bashrc`
