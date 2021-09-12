@@ -73,6 +73,7 @@
 | ip a                                                     |                                                                            |
 | man [someCommand]                                        | Show manual of command.                                                    |
 | sudo apt-cache show [nameApp]                            |                                                                            |
+| printenv                                                         |                                                                            |
 |                                                          |                                                                            |
 
 `>` - Write to the file
