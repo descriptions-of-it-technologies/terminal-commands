@@ -76,6 +76,8 @@
 | printenv                                                         |                                                                            |
 |                                                          |                                                                            |
 
+`sudo touch /etc/profile.d/environment_variable.sh`
+
 `>` - Write to the file
 `>>` - Append to the file
 
