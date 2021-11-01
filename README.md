@@ -126,6 +126,32 @@
 
 
 
+## WIFI.
+
+| Key/Command                                                          | Description                                                                |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| nmcli d wifi list                                                    |                                                                            |
+| nmcli c                                                              | To see a list of all saved connections                                     |
+| nmcli radio wifi on                                                  |                                                                            |
+| nmcli radio wifi off                                                 |                                                                            |
+| nmcli d wifi connect wifiName password passwordValue                 |                                                                            |
+| nmcli d wifi connect wifiName                                        |                                                                            |
+| nmcli -a d wifi connect wifiName                                     |                                                                            |
+| nmcli --ask d wifi connect wifiName                                  |                                                                            |
+| nmcli d wifi list --rescan yes                                       |                                                                            |
+| nmcli c delete wifiName                                              | To forget a connection (that was saved after you ran nmcli -a d wifi connect <name>)|
+|                                                                      |                                                                            |
+
+
+
+## cyberghostvpn
+* `cyberghostvpn --traffic --country-code coyntryCode` - list countries
+* `cyberghostvpn --traffic --country-code coyntryCode --city` - list cities
+* `cyberghostvpn --traffic --country-code coyntryCode --city cityName --server` - list servers
+* `cyberghostvpn --traffic --country-code coyntryCode --city cityName --server serverInstanceName --connect`
+* `cyberghostvpn --status`
+* `cyberghostvpn --stop`
+
 
 
 ## SSH.
