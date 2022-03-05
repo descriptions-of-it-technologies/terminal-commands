@@ -144,7 +144,8 @@
 
 
 
-## cyberghostvpn
+## cyberghostvpn 
+
 * `cyberghostvpn --traffic --country-code coyntryCode` - list countries
 * `cyberghostvpn --traffic --country-code coyntryCode --city` - list cities
 * `cyberghostvpn --traffic --country-code coyntryCode --city cityName --server` - list servers
